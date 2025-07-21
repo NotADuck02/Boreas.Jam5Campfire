@@ -1,0 +1,220 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "PARTY_ROCK",
+    "starSystem": "Jam5",
+    "ShipLog": {
+        "xmlFile": "planets/ShipLog/party_rock.xml",
+        "mapMode": {
+            "selectable": true,
+            "outlineSprite": "assets/OutlineSprite.png",
+            "revealedSprite": "assets/RevealedSprite.png"
+        },
+        "spriteFolder": "assets"
+    },
+    "Atmosphere": {
+        "hasOxygen": true,
+        "size": 525,
+        "atmosphereTint": {
+            "r": 32,
+            "g": 128,
+            "b": 128,
+            "a": 255
+        }
+    },
+    "Water": {
+        "size": 350
+    },
+    "Base": {
+        "groundSize": 0,
+        "surfaceGravity": 12,
+        "surfaceSize": 650
+    },
+    "Orbit": {
+        "primaryBody": "NeutronStar",
+        "siderealPeriod": 7,
+        "semiMajorAxis": 1500,
+        "inclination": 90,
+        "longitudeOfAscendingNode": 90,
+        "trueAnomaly": 225,
+        "isTidallyLocked": true
+    },
+    "HeightMap": {
+        "heightMap": "assets/finPlanHeightMap.png",
+        "minHeight": 100,
+        "maxHeight": 450,
+        "textureMap": "assets/finPlanTextureMap.png"
+    },
+    "AmbientLights": [
+        {
+            "intensity": 0.8,
+            "tint": {
+                "r": 50,
+                "g": 150,
+                "b": 100
+            }
+        }
+    ],
+    "Props": {
+        "details": [
+            {
+                "rename": "TowerNomai",
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": -154,
+                    "y": -189,
+                    "z": 275
+                },
+                "rotation": {
+                    "x": 58,
+                    "y": 139,
+                    "z": 170
+                }
+            },
+            {
+                "rename": "PatrickNomai",
+                "path": "TowerNomai",
+                "position": {
+                    "x": 71,
+                    "y": -442,
+                    "z": -44
+                },
+                "rotation": {
+                    "x": 349,
+                    "y": 129,
+                    "z": 177
+                }
+            },
+            {
+                "rename": "MainIslandNomai",
+                "path": "TowerNomai",
+                "position": {
+                    "x": -379,
+                    "y": 96,
+                    "z": 67
+                },
+                "rotation": {
+                    "x": 29,
+                    "y": 360,
+                    "z": 82
+                }
+            },
+            {
+                "rename": "MagentaNomai",
+                "path": "TowerNomai",
+                "position": {
+                    "x": 193,
+                    "y": 221,
+                    "z": -207
+                },
+                "rotation": {
+                    "x": 321,
+                    "y": 342,
+                    "z": 338
+                }
+            },
+            {
+                "rename": "CrystalCake",
+                "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
+                "position": {
+                    "x": 35,
+                    "y": 89,
+                    "z": 37
+                },
+                "rotation": {
+                    "x": 279,
+                    "y": 233,
+                    "z": 352
+                }
+            }
+        ],
+        "dialogue": [
+            {
+                "parentPath": "Sector/TowerNomai",
+                "position": {
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "pathToAnimController": "Sector/TowerNomai",
+                "xmlFile": "planets/text/PatrickNomai.xml",
+                "lookAtRadius": 5,
+                "radius": 3
+            },
+            {
+                "parentPath": "Sector/PatrickNomai",
+                "position": {
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "pathToAnimController": "Sector/PatrickNomai",
+                "xmlFile": "planets/text/TowerNomai.xml",
+                "lookAtRadius": 5,
+                "radius": 3
+            },
+            {
+                "parentPath": "Sector/MainIslandNomai",
+                "position": {
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "pathToAnimController": "Sector/MainIslandNomai",
+                "xmlFile": "planets/text/MainIslandNomai.xml",
+                "lookAtRadius": 5,
+                "radius": 3
+            },
+            {
+                "parentPath": "Sector/MagentaNomai",
+                "position": {
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "pathToAnimController": "Sector/MagentaNomai",
+                "xmlFile": "planets/text/MagentaNomai.xml",
+                "lookAtRadius": 5,
+                "radius": 3
+            }
+        ]
+    },
+    "Volumes": {
+        "conditionTriggerVolumes": [
+            {
+                "radius": 10,
+                "position": {
+                    "x": 0,
+                    "y": 5,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "parentPath": "Sector/CrystalCake",
+                "condition": "CAKEFOUND",
+                "persistent": true,
+                "reversible": false,
+                "probe": false
+            }
+        ],
+        "revealVolumes": [
+            {
+                "radius": 10,
+                "position": {
+                    "x": 0,
+                    "y": 5,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "parentPath": "Sector/CrystalCake",
+                "revealFor": "player",
+                "revealOn": "enter",
+                "reveals": [
+                    "FOUND_1"
+                ]
+            }
+        ]
+    }
+}

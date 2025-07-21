@@ -1,0 +1,51 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Jovial Nomai</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Oh a visitor! Welcome! I'm sorry to say but we do have a small problem...</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What's the problem? Could I help?</Text>
+        <DialogueTarget>1</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+
+    <RevealFacts>
+      <FactID>JOVIAL_1</FactID>
+      <FactID>MISSING_1</FactID>
+    </RevealFacts>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>1</Name>
+    <Dialogue>
+      <Page>It seems our beautiful cake is very late in it's arrival...</Page>
+      <Page>Could you ask the baker about the status of the cake? They are located utop the bright blue tower.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Of course! I'll be on my way.</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>PostCakeDiscovery</Name>
+    <EntryCondition>CAKEFOUND</EntryCondition>
+    <Dialogue>
+      <Page>Oh... that's a real shame... but it's ok! The point of a party isn't to eat cake, it's to be with those you care about!</Page>
+      <Page>Could you go ask the others about joining us for the party? I... should've told you but... you were the only one that's shown up</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>JOVIAL_2</FactID>
+      <FactID>FOUND_2</FactID>
+    </RevealFacts>
+    <SetCondition>INVITEOTHERS</SetCondition>
+  </DialogueNode>
+
+</DialogueTree>

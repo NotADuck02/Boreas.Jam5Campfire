@@ -1,0 +1,44 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Angry Nomai</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>What do you mean the cake is late?</Page>
+      <Page>Gosh darn it Carl, you had one job.</Page>
+      <Page>Sorry about that youngling, Carl was heading towards the magenta peaks last we spoke</Page>
+    </Dialogue>
+
+    <RevealFacts>
+      <FactID>ANGRY_1</FactID>
+      <FactID>MISSING_3</FactID>
+    </RevealFacts>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>INVITE</Name>
+    <EntryCondition>INVITEOTHERS</EntryCondition>
+    <Dialogue>
+      <Page>The cake was at the bottom of the sea?</Page>
+      <Page>Can't Carl do anything right</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Have you ever tried positive reinforcement? Also would you like to come to the party?</Text>
+        <DialogueTarget>1</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>1</Name>
+    <Dialogue>
+      <Page>I guess I could try that...</Page>
+      <Page>I'll go to the party, I just need a quick 22 minute nap first</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>ANGRY_2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

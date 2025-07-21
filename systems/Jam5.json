@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "canEnterViaWarpDrive": true,
+  "startHere": true,
+  "respawnHere": true,
+  "loopDuration": 22,
+  "enableTimeLoop": true,
+  "name": "Jam5",
+  "initialReveal": [],
+  "curiosities": [
+    {
+      "id": "MYSTERY_OF_CAKE",
+      "color": {
+        "r": 50,
+        "g": 150,
+        "b": 100,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 50,
+        "g": 180,
+        "b": 130,
+        "a": 255
+      }
+    }
+  ],
+  "entryPositions": [
+    {
+      "id": "MISSING_CAKE",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "JOVIAL_NOMAI",
+      "position": {
+        "x": 150,
+        "y": 0
+      }
+    },
+    {
+      "id": "SERIOUS_NOMAI",
+      "position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "id": "ANGRY_NOMAI",
+      "position": {
+        "x": 0,
+        "y": 150
+      }
+    },
+    {
+      "id": "SAD_NOMAI",
+      "position": {
+        "x": 0,
+        "y": -150
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Serious Nomai</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>We're closed</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Do you have the cake for the party?</Text>
+        <DialogueTarget>1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Oh... I'm sorry</Text>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>1</Name>
+    <Dialogue>
+      <Page>Oh the cake? It was finished already, I sent it out for delivery.</Page>
+      <Page>The post master is on the star-shaped island. Maybe they know where it is.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>SERIOUS_1</FactID>
+      <FactID>MISSING_2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INVITE</Name>
+    <EntryCondition>INVITEOTHERS</EntryCondition>
+    <Dialogue>
+      <Page>No Refunds</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Oh no it's not about that... do you want to come to the party?</Text>
+        <DialogueTarget>2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>2</Name>
+    <Dialogue>
+      <Page>No thank you.</Page>
+      <Page>Have a nice day</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>SERIOUS_2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

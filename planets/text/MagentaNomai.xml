@@ -1,0 +1,46 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Sad Nomai</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>*Incomprehensible Sobbing*</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Are you ok?</Text>
+        <DialogueTarget>1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Seems like you need time...</Text>
+        <DialogueTarget>1</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>1</Name>
+    <Dialogue>
+      <Page>I... I dropped the cake...</Page>
+      <Page>Deep into the ocean off the far side of the furthest island</Page>
+      <Page>I've been hiding here so no one finds me</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>SAD_1</FactID>
+      <FactID>MISSING_4</FactID>
+    </RevealFacts>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>INVITE</Name>
+    <EntryCondition>INVITEOTHERS</EntryCondition>
+    <Dialogue>
+      <Page>T-they want me at the party? Oh thank you so much!</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>SAD_2</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

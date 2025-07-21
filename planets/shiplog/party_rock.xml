@@ -1,0 +1,85 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>PARTY_ROCK</ID>
+    <Entry>
+        <ID>MISSING_CAKE</ID>
+        <Name>Missing Cake</Name>
+        <Curiosity>MYSTERY_OF_CAKE</Curiosity>
+        <IsCuriousity/>
+        <ExploreFact>
+            <ID>MISSING_1</ID>
+            <Text>A Jovial Nomai informed me that the cake for the celebration is missing!</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>MISSING_2</ID>
+            <Text>A Serious Baker informed me that the cake had supposedly already been delivered.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>MISSING_3</ID>
+            <Text>An Angry Postmaster informed me that their employee Carl had the cake.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>MISSING_4</ID>
+            <Text>Carl dropped the cake in the ocean!</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>FOUND_1</ID>
+            <Text>I found the cake in a deep trench in the sea</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>FOUND_2</ID>
+            <Text>Despite the loss of cake, the party could still continue!</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>JOVIAL_NOMAI</ID>
+        <Name>Cherry</Name>
+        <Curiosity>MYSTERY_OF_CAKE</Curiosity>
+        <ExploreFact>
+            <ID>JOVIAL_1</ID>
+            <Text>A Jovial Nomai told me the baker lives atop the Blue Tower</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>JOVIAL_2</ID>
+            <Text>Despite the cake being gone, the Jovial Nomai wishes to have the party anyways and asked me to invite the others!</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>SERIOUS_NOMAI</ID>
+        <Name>Lime</Name>
+        <Curiosity>MYSTERY_OF_CAKE</Curiosity>
+        <ExploreFact>
+            <ID>SERIOUS_1</ID>
+            <Text>A Serious Nomai told me the Postmaster lives on the Star Shaped Island</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>SERIOUS_2</ID>
+            <Text>The Serious Nomai was not interested in joining us for the party</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>ANGRY_NOMAI</ID>
+        <Name>Tomato</Name>
+        <Curiosity>MYSTERY_OF_CAKE</Curiosity>
+        <ExploreFact>
+            <ID>ANGRY_1</ID>
+            <Text>A Frustrated Nomai told me that Carl was last seen in the Magenta Mountains</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>ANGRY_2</ID>
+            <Text>The Frustrated Nomai will join us for the party after a short 22 minute nap</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>SAD_NOMAI</ID>
+        <Name>Carl</Name>
+        <Curiosity>MYSTERY_OF_CAKE</Curiosity>
+        <ExploreFact>
+            <ID>SAD_1</ID>
+            <Text>A Sad Nomai named Carl dropped the cake into the sea right off the front of the line of the Magenta Islands</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>SAD_2</ID>
+            <Text>Carl was very excited about being invited to the party and will be there soon!</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>
