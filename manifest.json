@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
 	"filename": "NewHorizonsConfig.dll",
 	"author": "Boreas",
-	"name": "The Snack Snatcher",
+	"name": "Mystery of the Missing Cake",
 	"uniqueName": "Boreas.Jam5CakeCapere",
 	"version": "0.0.1",
 	"owmlVersion": "2.15.1",
